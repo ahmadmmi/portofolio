@@ -10,8 +10,8 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         <section className='w-full bg-[#F6C71F] h-screen '>
-          <div className='flex flex-col container h-full'>
-            <nav className='flex flex-row justify-between pt-[58px]'>
+          <div className='flex flex-col h-full px-6 md:px-72'>
+            <nav className='flex flex-row justify-between pt-6 md:pt-14'>
               <span className='flex flex-row font-bold'>AM</span>
               <Image
                 src='/image/icons8-menu.svg'
@@ -21,10 +21,10 @@ export default function RootLayout({
               />
             </nav>
             <div className='flex grow flex-row'>
-              <div className='flex flex-col justify-center'>
+              <div className='flex flex-col justify-center w-2/3'>
                 <p className='text-[42px] md:text-[85px] leading-tight font-medium '>
                   Hello I&apos;m Maulana, <br />
-                  I&apos;m Develop Stuff.
+                  I&apos;m Software Engineer.
                 </p>
                 <p className='text-xl md:text-2xl mt-10 '>
                   Lets collaborate on your next project.
@@ -64,13 +64,13 @@ export default function RootLayout({
                   />
                 </div>
               </div>
-              <div className='grid w-1/2'>
+              <div className='grid w-1/3'>
                 <Image
-                  src='/image/people.png'
+                  src='/image/profil.png'
                   alt='profil'
                   width='720'
                   height='1080'
-                  className='w-5/6 place-self-end'
+                  className='w-3/6 place-self-end'
                 />
               </div>
             </div>
@@ -78,10 +78,10 @@ export default function RootLayout({
         </section>
         {children}
         <section className='border-t bg-zinc-100 mt-[100px]'>
-          <div className='grid grid-cols-4 container py-[50px]'>
-            <div className='flex flex-col'>
+          <div className='flex flex-col md:flex-row justify-between px-6 md:px-72 py-[50px]'>
+            <div className='flex flex-col place-content-center'>
               <div className='w-[100px] h-[100px] bg-zinc-200 border-2 border-zinc-300 rounded-lg'></div>
-              <div className='inline-flex space-x-[24x] mt-[24px] opacity-50'>
+              <div className='inline-flex space-x-[8px] mt-[24px] opacity-50'>
                 <Image
                   src='/image/icons8-facebook.svg'
                   alt='facebook'
@@ -107,23 +107,14 @@ export default function RootLayout({
                   height='24'
                 />
               </div>
-              <p className='mt-[12px] text-sm text-neutral-500'>
-                2023 Ahmad Maulana. All rights rederved
-              </p>
+              <div>
+                <p className='mt-[12px] text-sm text-neutral-500'>
+                  2023 Ahmad Maulana. All rights reserved
+                </p>
+              </div>
             </div>
-            <div className='flex flex-col space-y-4 text-zinc-500'>
-              <a href='#'> About Me</a>
-              <a href='#'> Contact</a>
-              <a href='#'> Testimonial</a>
-              <a href='#'> Reference</a>
-            </div>
-            <div className='flex flex-col space-y-4 text-zinc-500'>
-              <a href='#'> Portofolio</a>
-              <a href='#'> Store</a>
-              <a href='#'> Books</a>
-            </div>
-            <div className='flex flex-col space-y-4 text-zinc-500'>
-              <a href='#'> Get In Touch</a>
+            <div className='flex flex-col place-content-center space-y-4 text-zinc-500'>
+              <a href='#'> Contact Me</a>
               <a href='#' className='mt-[24px] font-bold text-black'>
                 {"📞 +62858-7252-1060"}
               </a>

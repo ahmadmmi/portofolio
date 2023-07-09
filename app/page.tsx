@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <section className='w-full container mt-[200px]'>
+      <section className='w-full px-6 md:px-72 mt-[200px]'>
         <p className='text-[50px] font-bold'>Portofolio</p>
         <p>
           I have worker with a couple of innovative brands over years, here is a
@@ -28,8 +28,20 @@ export default function Home() {
             width='100'
             height='100'
           />
+          <Image
+            src='/image/icons8-shopee.svg'
+            alt='shopee'
+            width='100'
+            height='100'
+          />
+          <Image
+            src='/image/icons8-lazada.svg'
+            alt='lazada'
+            width='100'
+            height='100'
+          />
         </div>
-        <div className='inline-flex mt-[80px] space-x-[24px] text-[20px]'>
+        <div className='inline-flex flex-wrap justify-items-start mt-[80px] gap-x-4 text-[20px]'>
           <span className='text-neutral-900 font-bold'> All Works</span>
           <span> Andorid Development</span>
           <span> Web Development</span>
@@ -49,20 +61,20 @@ export default function Home() {
         </div>
       </section>
 
-      <div className='border border-neutral-500 w-1/3 container my-[200px]'></div>
+      <div className='border border-neutral-500 w-full my-[200px]'></div>
 
-      <section className='flex flex-row w-full container'>
-        <div className='w-1/2'>
+      <section className='flex flex-row flex-wrap w-full px-6 md:px-72'>
+        <div className=' w-full md:w-1/2'>
           <Image
             src='/image/genshinHomeSmall.jpg'
             alt='image1'
-            width='720'
-            height='720'
-            className='w-4/6 border-4 border-white rounded-xl'
+            width='1080'
+            height='1080'
+            className='w-2/3 border-4 border-white rounded-xl'
           />
         </div>
-        <div className='w-1/2'>
-          <div className='flex flex-col w-1/2'>
+        <div className='w-full md:w-1/2'>
+          <div className='flex flex-col'>
             <p className='text-[50px] font-bold'>Genshin</p>
             <p>Explore The World</p>
             <div className='inline-flex mt-[100px] space-x-[24px]'>
@@ -77,9 +89,9 @@ export default function Home() {
         </div>
       </section>
 
-      <div className='border border-neutral-500 w-1/3 container my-[200px]'></div>
+      <div className='border border-neutral-500 w-full my-[200px]'></div>
 
-      <section className='text-center w-full container'>
+      <section className='text-center w-full px-6 md:px-72'>
         <p className='text-[50px] font-bold'>Genshin</p>
         <p className='text-[24px]'>Explore The World</p>
         <div className='mt-[50px]'>
